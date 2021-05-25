@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="306dp"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:background="#cd5c">
+
+        <EditText
+            android:id="@+id/number2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textSize="40sp"/>/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/number1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textSize="40sp"/>/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="305dp"
+            android:text="결과"
+            android:textSize="40sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="199dp"
+            android:layout_weight="1"
+            android:text="-"
+            android:backgroundTint="#ff1493"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/multi"
+            android:layout_width="wrap_content"
+            android:layout_height="196dp"
+            android:layout_weight="1"
+            android:text="*"
+            android:backgroundTint="#ffb6"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/division"
+            android:layout_width="wrap_content"
+            android:layout_height="197dp"
+            android:layout_weight="1"
+            android:text="/"
+            android:backgroundTint="#874CE6"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:backgroundTint="#1e90ff"
+            android:text="+"
+            android:textSize="30sp"/>
+    </LinearLayout>
+</LinearLayout>
