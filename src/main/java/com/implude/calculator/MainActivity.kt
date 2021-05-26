@@ -27,10 +27,10 @@ class MainActivity : AppCompatActivity() {
         num1 = findViewById(R.id.number1) as EditText
         num2 = findViewById(R.id.number2) as EditText
         result = findViewById(R.id.textView3) as TextView
-        pl = findViewById(R.id.plus) as Button
-        mi = findViewById(R.id.minus) as Button
+        pl = findViewById(R.id.pl) as Button
+        mi = findViewById(R.id.mi) as Button
         multi = findViewById(R.id.multi) as Button
-        divi = findViewById(R.id.division) as Button
+        divi = findViewById(R.id.divi) as Button
 
 
 
