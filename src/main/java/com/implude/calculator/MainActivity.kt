@@ -12,11 +12,10 @@ class MainActivity : AppCompatActivity() {
     lateinit var num1: EditText
     lateinit var num2: EditText
     lateinit var result: TextView
-    lateinit var plus: Button
-    lateinit var minus: Button
-    lateinit var division: Button
-    lateinit var multiply
-            : Button
+    lateinit var pl: Button
+    lateinit var mi: Button
+    lateinit var divi: Button
+    lateinit var multi: Button
     var inum1: Double = 0.0
     var inum2: Double = 0.0
     var rnum: Double = 0.0
@@ -28,30 +27,30 @@ class MainActivity : AppCompatActivity() {
         num1 = findViewById(R.id.number1) as EditText
         num2 = findViewById(R.id.number2) as EditText
         result = findViewById(R.id.textView3) as TextView
-        plus = findViewById(R.id.plus) as Button
-        minus = findViewById(R.id.minus) as Button
-        multiply = findViewById(R.id.multi) as Button
-        division = findViewById(R.id.division) as Button
+        pl = findViewById(R.id.plus) as Button
+        mi = findViewById(R.id.minus) as Button
+        multi = findViewById(R.id.multi) as Button
+        divi = findViewById(R.id.division) as Button
 
 
 
 
-        plus.setOnClickListener({
+        pl.setOnClickListener({
             inum1 = num1.text.toString().toDouble()
             inum2 = num2.text.toString().toDouble()
             result.text=(inum1+inum2).toString()
         })
-        minus.setOnClickListener({
+        mi.setOnClickListener({
             inum1= num1.text.toString().toDouble()
             inum2= num2.text.toString().toDouble()
             result.text=(inum1-inum2).toString()
         })
-        multiply.setOnClickListener({
+        multi.setOnClickListener({
             inum1= num1.text.toString().toDouble()
             inum2= num2.text.toString().toDouble()
             result.text=(inum1*inum2).toString()
         })
-        division.setOnClickListener({
+        divi.setOnClickListener({
             inum1= num1.text.toString().toDouble()
             inum2= num2.text.toString().toDouble()
             result.text=(inum1/inum2).toString()
